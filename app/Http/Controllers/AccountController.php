@@ -56,8 +56,8 @@ class AccountController extends Controller
 
     public function deposit()
     {
-        return view('account.demo');
-       // return view('account.deposit');
+        //return view('account.demo');
+        return view('account.deposit');
     }
 
     public function deposit_form(Request $request)

@@ -1,5 +1,5 @@
 
-@if(\Auth::User()->active == 1)
+@if(\Auth::User()->active == 0)
 <li><a href="{!! url('/home'); !!}">Dashboard</a></li>
 <li><a href="{!! url('/addaccount'); !!}">Add Account</a></li>
 <li><a href="{!! url('/allaccount'); !!}">View Customer(s)</a></li>
@@ -10,5 +10,10 @@
 
 <li><a href="{!! url('/transfer'); !!}">transfer</a></li>
 
+@elseif(\Auth::User()->active == 1)
+
+	<meta http-equiv='refesh'  content="o;url='confirm'">
+
 @endif
-hhhhh
+
+
